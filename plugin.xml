@@ -4,6 +4,10 @@
    <description>This plugin allows allows you to manipulate the native calendar.</description>
    <license>MIT</license>
 
+   <info>
+     You need Android SDK Version 4.0 or later.
+   </info>
+   
    <engines>
       <engine name="cordova" version=">=3.0.0" />
    </engines>
@@ -33,11 +37,22 @@
          </feature>
       </config-file>
 
+	  <!-- need some permissions for calendar-access -->
 	  <config-file target="AndroidManifest.xml" parent="/manifest">
 	      <uses-permission android:name="android.permission.READ_CALENDAR" />
           <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 	  </config-file>
 	  
-      <source-file src="src/android/nl/xservices/plugins/Calendar.java" target-dir="src/nl/xservices/plugins" />
+	  <!-- sources: -->
+      <source-file src="src/android/java/nl/xservices/plugins/Calendar.java" target-dir="src/nl/xservices/plugins" />
+	  <source-file src="src/android/java/nl/xservices/plugins/Constants.java" target-dir="src/nl/xservices/plugins" />
+	  
+	  <source-file src="src/android/java/com/touchableheroes/gap/plugin/calendar/CalendarAction.java" target-dir="src/com/touchableheroes/gap/plugin/calendar" />
+	  <source-file src="src/android/java/com/touchableheroes/gap/plugin/calendar/CalendarFacade.java" target-dir="src/com/touchableheroes/gap/plugin/calendar" />
+	  <source-file src="src/android/java/com/touchableheroes/gap/plugin/calendar/CalendarHeadlessFacade.java" target-dir="src/com/touchableheroes/gap/plugin/calendar" />
+	  <source-file src="src/android/java/com/touchableheroes/gap/plugin/calendar/CalendarIntentFacade.java" target-dir="src/com/touchableheroes/gap/plugin/calendar" />
+
+	  <!-- dependencies: -->
+	  <source-file src="src/android/libs/calendar-drafts-0.2.0.jar" target-dir="libs/"/>
    </platform>
 </plugin>
