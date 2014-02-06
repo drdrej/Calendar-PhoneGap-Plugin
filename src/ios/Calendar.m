@@ -205,9 +205,11 @@
     if (location.length > 0) {
         [predicateString appendString:[NSString stringWithFormat:@" AND location == '%@'" , location]];
     }
-    if (message.length > 0) {
-        [predicateString appendString:[NSString stringWithFormat:@" AND notes == '%@'" , message]];
-    }
+    
+    // PATCH [asiebert]: ignore notes, there can be complex and not a part of this kind of identity (my 2 cents)
+    // if (message.length > 0) {
+    //    [predicateString appendString:[NSString stringWithFormat:@" AND notes == '%@'" , message]];
+    //}
     
     NSPredicate *matches = [NSPredicate predicateWithFormat:predicateString];
     
