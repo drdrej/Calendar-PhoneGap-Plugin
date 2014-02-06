@@ -1,18 +1,20 @@
 # PhoneGap Calendar plugin
 
-for iOS and Android, 
-based on parts of impl. of original plugin, written by : [Eddy Verbruggen](http://www.x-services.nl)
+## Abstract
+ 
+It's a PhoneGap-plugin to access calendar on iOS and android. 
+ 
+This plugin is based on parts of impl. of original plugin, written by : [Eddy Verbruggen](http://www.x-services.nl)
 
 
 This branch contains different android-implementation written by me (A. Siebert) and some changes for iOS.
 API is the same (check Calendar.js). **This implementation for Android supports headless calendar-access.**  
 
-
 I use this impl in some of my projects.
 
 Fore more info check Eddy's original [repository](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin)
 
-Install itfrom CLI:
+## Install itfrom CLI:
 
 ```
 $ phonegap local plugin add https://github.com/drdrej/Calendar-PhoneGap-Plugin.git
