@@ -3,8 +3,10 @@
 for iOS and Android, 
 based on parts of impl. of original plugin, written by : [Eddy Verbruggen](http://www.x-services.nl)
 
-This branch contains different android-implementation written by me and some changes for iOS.
-API is the same (check Calendar.js).
+
+This branch contains different android-implementation written by me (A. Siebert) and some changes for iOS.
+API is the same (check Calendar.js). **This implementation for Android supports headless calendar-access.**  
+
 
 I use this impl in some of my projects.
 
