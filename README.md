@@ -2,7 +2,7 @@
 
 ## Abstract
  
-It's a PhoneGap-plugin to access calendar on iOS and android. 
+It's a branch of PhoneGap-plugin to access calendar on iOS and android. 
  
 This plugin is based on parts of impl. of original plugin, written by : [Eddy Verbruggen](http://www.x-services.nl)
 
