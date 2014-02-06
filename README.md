@@ -11,7 +11,7 @@ This branch contains different android-implementation written by me (A. Siebert)
 API is the same (check Calendar.js). **This implementation for Android supports headless calendar-access.**  
 
 
-## Install itfrom CLI:
+## Install it from CLI:
 
 ```
 $ phonegap local plugin add https://github.com/drdrej/Calendar-PhoneGap-Plugin.git
