@@ -10,9 +10,6 @@ This plugin is based on parts of impl. of original plugin, written by : [Eddy Ve
 This branch contains different android-implementation written by me (A. Siebert) and some changes for iOS.
 API is the same (check Calendar.js). **This implementation for Android supports headless calendar-access.**  
 
-I use this impl in some of my projects.
-
-Fore more info check Eddy's original [repository](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin)
 
 ## Install itfrom CLI:
 
@@ -25,6 +22,7 @@ $ cordova plugin add https://github.com/drdrej/Calendar-PhoneGap-Plugin.git
 ```
 
 ## More Info
+
 For more information checkout README.md of original [repository](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin):
 
 
