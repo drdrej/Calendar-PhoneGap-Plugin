@@ -1,51 +1,26 @@
 # PhoneGap Calendar plugin
 
-for iOS and Android, by [Eddy Verbruggen](http://www.x-services.nl)
+for iOS and Android, 
+based on parts of impl. of original plugin, written by : [Eddy Verbruggen](http://www.x-services.nl)
 
-1. [Description](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#1-description)
-2. [Installation](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#2-installation)
-	2. [Automatically (CLI / Plugman)](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#automatically-cli--plugman)
-	2. [Manually](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#manually)
-	2. [PhoneGap Build](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#phonegap-build)
-3. [Usage](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#3-usage)
-4. [Credits](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#4-credits)
-5. [License](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin#5-license)
+This branch contains different android-implementation written by me and some changes for iOS.
+API is the same (check Calendar.js).
 
-## 1. Description
+I use this impl in some of my projects.
 
-This plugin allows you to add events to the Calendar of the mobile device.
+Fore more info check Eddy's original [repository](https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin)
 
-* Works with PhoneGap >= 3.0.
-* For pre-3.0, see [the pre-3.0 branch]( (https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin/tree/pre-3.0).
-* Compatible with [Cordova Plugman](https://github.com/apache/cordova-plugman).
-* [Officially supported by PhoneGap Build](https://build.phonegap.com/plugins/100).
-
-### iOS specifics
-* Supported methods: `find`, `create`, `modify`, `delete`.
-* All methods work without showing the native calendar. Your app never looses control.
-* Tested on iOS 6 and 7.
-
-### Android specifics
-* Only the `create` method is supported (more may come, if people request it, but creating is the most important thing, right?).
-* When the `create` method is called, the use is presented a prefilled calendar item. Pressing the hardware back button will give control back to your app.
-* Tested on Android 4.
-
-## 2. Installation
-
-### Automatically (CLI / Plugman)
-Calendar is compatible with [Cordova Plugman](https://github.com/apache/cordova-plugman) and ready for the [PhoneGap 3.0 CLI](http://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html#The%20Command-line%20Interface_add_features), here's how it works with the CLI:
+Install itfrom CLI:
 
 ```
-$ phonegap local plugin add https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
+$ phonegap local plugin add https://github.com/drdrej/Calendar-PhoneGap-Plugin.git
 ```
 or
 ```
-$ cordova plugin add https://github.com/EddyVerbruggen/Calendar-PhoneGap-Plugin.git
+$ cordova plugin add https://github.com/drdrej/Calendar-PhoneGap-Plugin.git
 ```
-don't forget to run this command afterwards:
-```
-$ cordova build
-```
+
+
 
 ### Manually
 
@@ -62,6 +37,13 @@ $ cordova build
 <feature name="Calendar">
   <param name="android-package" value="nl.xservices.plugins.Calendar" />
 </feature>
+```
+
+Extends plugin-Code manually:
+
+```java
+
+
 ```
 
 2\. Grab a copy of Calendar.js, add it to your project and reference it in `index.html`:
